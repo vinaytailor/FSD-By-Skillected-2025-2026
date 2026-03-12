@@ -142,7 +142,6 @@ console.log(obj)
 /* whenever we use const keyword at this time
    refrence cannot change but object content can change */
 
-
 // Glonbal scope 
 let x4 = 29;
 // accessible everyone 
@@ -163,6 +162,68 @@ if (true){
 console.log(y)*/
 
 
+// -- day 4 --  ----------- hoisthing ----------  
+ 
+// variable and function are moves to top of scope befor executions
 
+// var x9;
+console.log(x9);
+var x9 =90;
 
-// -- day 4 --  -----------  ----------   
+// internally asumes -> var x; declared
+
+// console.log(x10)
+// let x10 = 10;
+
+// let -> tdz -> temporal death zone 
+// between declaration and initialization
+
+// data types
+// data types declared which type of data store in variables 
+
+// type of data type
+// 1. Primitive 
+// Primitive data types stores single values
+
+// 1. Number -> intiger, decimal, infinity, Nan -> not a number
+
+let age = 18;
+
+// console.log("Hello" -5)
+
+// 2. String -> 
+let name = "Vinay";   // "" '' ``
+
+console.log(`Hello ${name}`);
+
+// 3. Boolean
+
+let isAdmin = true
+console.log(isAdmin)
+
+// 4.Undefined -> Declared but not assigned
+let j;
+console.log(j)
+
+// 5. NUN -> Intention empty valyue 
+let k=null;
+
+// 6. Bigint -> For very large number 
+
+let l = 13368874515484535;
+
+// Symbol -> Unique identifiers
+let id = Symbol();
+
+console.log(id);
+
+// 2. Non Primitive (Reference types)
+// Non primitive data types stores referance type of data
+
+// Object, Array, Function
+
+let arr = [1, 2, 3];
+
+function greet(){
+
+}
