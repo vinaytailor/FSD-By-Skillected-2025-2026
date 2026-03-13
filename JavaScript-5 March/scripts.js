@@ -227,3 +227,104 @@ let arr = [1, 2, 3];
 function greet(){
 
 }
+
+
+// -- day 5 --  ----------- Operators in JS ----------
+//  An operator is a symbol that performs an operations on value and variables
+
+let num=30;
+let num1=20;
+let result = num+num1;
+
+
+// Operators -> = + 
+// Operands -> num, num1 and result
+
+// 1.Arithmetic Operators -> +, -, *, /, %, **, ++, --
+// These perform mathematical calculations
+
+
+// 2.Assigment Operators :- =, +=, -=, *=, /=, 
+// Used to assign values
+
+// 3.Comparison Operators :- ==, ===, !=, =>, <= 
+// Used to compare values
+// Result always true/false
+
+console.log(10==="10") //type coercion
+
+// 4.Logical Operators -> &&, ||,!
+// Used for multiple conditions
+// && -> and
+// || -> or
+// !  -> not
+
+
+// -- day 6 --
+
+// 5. Conditions Statement
+// Conditional statement allow a program to make decision based on conditions
+
+//^ if statement
+//     syntex
+// if (condition){
+// code to execute
+// }
+
+age = 19;
+if (age >= 18){
+    console.log("You are eligible to vote")
+}
+
+// step 1. -> chak condition
+// step 2. -> if conditon true -> run code
+// step 3. -> if false -> skip block
+
+// Condition 
+    // |
+    // ^
+    // true -> code run
+    // false -> skip
+
+
+//^ if-else Statement
+// Sometimes we need two possible outcome
+// ex : if student passes -> congratulation 
+//      else -> try again 
+
+marks = 84;
+if (marks >= 35){
+    console.log("Congratulation you are pass");
+}
+else{
+    console.log("Try agin")
+}
+
+//^ if else if statement (ladder if / Multipul conditions)
+// Sometimes these are many conditions
+// Independent
+
+// syntax->
+// if (condition){
+//     code
+// }else if (condition2){
+//     code
+// }else if (condition3){
+//     code
+// }else{
+//     code    
+// }
+
+// web grading system 
+
+mark = 88;
+if (mark >= 90){
+    console.log("Gread => A")
+}
+else if (mark >= 70){
+    console.log("Gread => B")
+}
+else if (mark >= 50){
+    console.log("Gread => C")
+}
+else console.log("Fail")
