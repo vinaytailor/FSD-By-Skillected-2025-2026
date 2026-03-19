@@ -1,3 +1,5 @@
+// ! -- Day 1 --
+
 // html -> structure banana
 // css -> styling 
 // JavaScripts -> Logic or Functibality
@@ -29,7 +31,7 @@
    event loop        ->                  */ 
 
 
-// -- day 2 --  ----------- Feature of JavaScript ----------   
+//! -- day 2 --  ----------- Feature of JavaScript ----------   
 
 
 // 1. Interpreter Language
@@ -80,7 +82,7 @@ console.log("Skillected");
 
 
 
-// -- day 3 --  ----------- Variable ----------  
+//! -- day 3 --  ----------- Variable ----------  
 
 // a variable is a container that stores data 
 
@@ -162,7 +164,7 @@ if (true){
 console.log(y)*/
 
 
-// -- day 4 --  ----------- hoisthing ----------  
+//! -- day 4 --  ----------- hoisthing ----------  
  
 // variable and function are moves to top of scope befor executions
 
@@ -229,7 +231,7 @@ function greet(){
 }
 
 
-// -- day 5 --  ----------- Operators in JS ----------
+//! -- day 5 --  ----------- Operators in JS ----------
 //  An operator is a symbol that performs an operations on value and variables
 
 let num=30;
@@ -257,10 +259,10 @@ console.log(10==="10") //type coercion
 // Used for multiple conditions
 // && -> and
 // || -> or
-// !  -> not
+//*  -> not
 
 
-// -- day 6 --
+//! -- day 6 --
 
 // 5. Conditions Statement
 // Conditional statement allow a program to make decision based on conditions
@@ -328,3 +330,146 @@ else if (mark >= 50){
     console.log("Gread => C")
 }
 else console.log("Fail")
+
+
+
+//! -- day 7 --  ----------- Nested if and Switch case ---------- 
+// if inside if another if
+// Jab mujhe ek condition dusri condition ke uper dependent rakhni ho jab use karte he
+
+
+let username = "admin";
+let password = "1234";
+if (username==="admin"){
+    if (password==="1234"){
+        console.log("Login Successfull")
+    }
+    else {
+        console.log("please enter correct password")
+    }
+}else{
+    console.log("user not found")
+}
+
+// step-1 -> chech username 
+// step-2 -> password
+// card valid 
+// pin corerct -> withdraw
+
+//? Switch statement 
+
+// used when many fixd values exist 
+
+// better alternative of else if
+
+//^ syntax
+
+// switch(expression){
+// case value1;
+//     code
+//     break;
+// case value2;
+//     code 
+//     break;
+// case value3;
+//     code 
+//     break;
+// default;
+//     code
+// }
+
+
+let day = 1;
+
+switch(day){
+    case 1:
+        console.log("Monday");
+        break;
+    
+    case 2:
+        console.log("Tuesday");
+        break;
+    
+    case 3:
+        console.log("Wed");
+
+    case 4:
+        console.log("Thu");
+        break;
+
+    case 5:
+        console.log("Fri");
+        break;
+
+    default:
+        console.log("Invalid day");
+}
+
+//* Ternary operator
+// Short form of if else 
+//^ Syntex
+// condition ? value1 : value2
+let age8 = 20;
+let result9 = age8>=18 ? "Adult": "Minor";
+console.log(result9);
+
+console.log(5>3>2);
+
+//! -- day 8 --  ----------- Control Loop ----------
+// A loop is used to execute a block of code repeatedly until a condition becomes false
+
+//* 1. for loop
+// for(initialization/condition/update){
+// }
+
+console.log("For loop: ")
+for(let i=1;i<=5;i++){
+    console.log(i)
+}
+
+// Flow
+// initilize -> condition chack -> true -> execute block -> update -> repeated
+                    // |
+                    // false (stop the code)
+
+//& Print number 1-100
+console.log("Number 1-100: ")
+
+for(let i=1;i<=100;i++){
+    console.log(i)
+}
+
+//& Print even numbers
+console.log("Even numbers 0-50: ")
+
+for (let i=0; i<=50; i++){
+    if (i % 2 == 0){
+        console.log(i)
+    }
+}
+
+//& Sum of numbers 
+console.log("Sum of numbers: ")
+
+let sum = 0;
+for (let i=1; i<=20; i++){
+    sum += i;
+}
+console.log(sum)
+
+//& Multiplication Table
+console.log("Multiplication")
+
+let multi = 17;
+for (let i=1; i<=10;i++){
+    console.log( multi*i)
+}
+
+//& Print 10-1 reverce number
+console.log("10-1 Reverce number: ")
+for(let i=10;i>=1;i--){
+    console.log(i);
+}
+
+
+
