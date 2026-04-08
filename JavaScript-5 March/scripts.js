@@ -473,3 +473,246 @@ for(let i=10;i>=1;i--){
 
 
 
+//! -- day 9 --  ----------- while and do while loop ----------
+
+
+
+//! -- day 10 --  ----------- control statement programs ----------
+
+
+
+//! -- day 11 --  ----------- nested for loop ----------
+
+
+
+//! -- day 12 --  ----------- Function ----------
+
+
+
+//! -- day 13 --  ----------- Functions 2 ----------
+
+
+
+//! -- day 14 --  ----------- Call Back function and hider Function ----------
+
+
+
+//! -- day 15 --  ----------- Objects ----------
+
+
+
+//! -- day 16 --  ----------- Arrays ----------
+
+
+
+//! -- day 17 --  ----------- Map ----------
+// map() creates a new array by calling a provided function on every element in the calling array.
+console.log("Map: ")
+let arr1 = [1, 2, 3, 4, 5];
+
+let result1 = arr1.map(function(num){
+    return num * num;
+});
+console.log(result1);
+
+// return a new array with square of each element in arr1
+// original array remains unchanged
+
+// map() runs loop internally and applies the function to each element of the array, returning a new array with the results.
+// each element stored in num variable and then return value becom a new arry element
+console.log("arrow function: ") 
+
+let result2 = arr1.map(num => num * num);
+console.log(result2);
+
+// returns new array
+// original array remains unchanged
+// runs for each and every element of the array
+// used for transformation of array
+
+arr.map(num => num * 3) // triple each element
+console.log(arr) // original array remains unchanged
+
+//? ----------- Filter ----------
+
+// Filter() returns elemnts of array that satisfy a condition
+console.log("Filter: ")
+// array -> chack condition -> keep maching element -> new array woth matvhin element.
+
+let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let result3 = arr2.filter(function(num){
+    return num % 2 == 0;
+});
+console.log(result3);
+
+// returns a new array with only even numbers
+// original array remains unchanged
+// runs for each and every element of the array
+// used for filtering of array
+
+let result4 = arr2.filter(num => num % 2 == 0);
+console.log(result4);
+
+
+let users = [
+    {name: "Vinay", age: 19},
+    {name: "Ravi", age: 17},
+    {name: "Anu", age: 30},
+    {name: "Sita", age: 15}
+]
+
+let adulst = users.filter(user => user.age >= 18);
+console.log(adulst);
+
+// returns a new array with only adult users
+// original array remains unchanged
+
+
+// map -> transformation each element of array and return new array(modify each element of array and return new array)
+// filter -> return element of array that satisfy a condition (select data from array and return new array)
+
+// ? ----------- Reduce ----------
+// reduce() reduces the array to a single value by applying a function
+// array.reduce(function(accumulator, currentValue,index,array){
+    // code to be executed for each element
+// }, initialValue)
+
+// accumulator -> accumulates the result of the function
+// currentValue -> current element being processed
+// index -> index of current element
+// array -> the array on which reduce is called
+// initialValue -> optional value to start the accumulation
+
+let numbers = [1, 2, 3, 4, 5];
+
+let sum1 = numbers.reduce(function(acc, num){
+    return acc + num; // 1+0, 1+2, 3+3, 4+6, 5+10
+}, 0);
+console.log(sum1);
+
+// returns the sum of all numbers in the array
+// original array remains unchanged
+
+
+
+// Map -> transformation of array
+// Filter -> selection of array
+// Reduce -> combine all element of array to single value
+
+
+// ! -- 18 -- ----------- oops ----------
+// what id oop
+// opp is a programming paradigm based on the consept of objects
+
+// real world cheezon ko code me represent karne ka tarika
+
+// object -> real world entity
+// property -> data about object
+// method -> action perform by object
+
+// name , age , city -> propertys
+// greet() -> method
+
+
+// why opp?
+// code reusability -> code ko reuse kar sakte he
+// modularity -> code ko module me divide kar sakte he
+// maintainability -> code ko maintain karna easy hota hai
+// scalability -> code ko scale karna easy hota hai
+// real world modeling -> real world cheezon ko code me represent karna easy hota hai
+
+// constructor function -> template for creating objects
+console.log("Constructor function: ")
+function User(name, age, city){
+    this.name = name;
+    this.age = age;
+    this.city = city;
+}
+let u1 = new User("Vinay", 19, "Delhi");
+console.log(u1);
+let u2 = new User("Ravi", 17, "Mumbai");
+console.log(u2);
+
+// class in js(es6)
+//  class is a blueprnt for creating objects
+// class is a syntactical suger over constructor function
+
+class User1{
+    constructor(name,age,city){
+        this.name = name;
+        this.age = age;
+        this.city = city;
+    }
+    greet(){
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old from ${this.city}`);
+    }
+}
+
+let u3 = new User1("Payal", 18, "Julmi");
+console.log(u3);
+u3.greet();
+
+
+// encapsulation -> bulding data and methods that operate on that data within a single unit (class)
+// data hiding -> hiding internal details and showing only functionality to user
+// abstraction -> hiding internal details and showing only functionality to user
+// inheritance -> child class can inherit properties and methods from parent class
+// polymorphism -> ability of object to take many forms (method overriding)
+
+
+class Bank{
+    #balance = 1200; // private property
+
+    deposit(amount){
+        this.#balance += amount;
+        console.log(`Deposited ${amount}. Current balance: ${this.#balance}`);
+    }
+}
+
+let bank = new Bank();
+bank.deposit(500);
+// console.log(bank.#balance) // error -> private property cannot be accessed outside class 
+
+
+// inheritance
+// parent class -> child class -> child class can inherit properties and methods from parent class
+// child class can also have its own properties and methods
+
+
+// parent class
+class Animal{
+    speak(){
+        console.log("Animal speaks");
+    }
+}
+// child class
+class Dog extends Animal{
+    bark(){
+        console.log("Dog barks");
+    }   
+}
+
+let dog = new Dog();
+dog.speak(); // Dog barks -> method overriding
+dog.bark(); // Dog barks -> bark is a function of Dog class
+
+
+// polimorphism
+// ability of object to take many forms
+// method overriding -> child class can provide specific implementation of method that is already provided by parent class
+
+
+// same method name but different implementation in parent and child class(different behavior in parent and child class)
+
+
+class Cat extends Animal{
+    speak(){
+        console.log("Cat meows");
+    }   
+}
+
+let cat = new Cat();
+cat.speak(); // Cat meows -> method overriding
+
+
