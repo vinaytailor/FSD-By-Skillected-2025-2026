@@ -716,3 +716,32 @@ let cat = new Cat();
 cat.speak(); // Cat meows -> method overriding
 
 
+// ! --Day 19 -- ---------- DOM & EVENTS ---------
+
+// browser concverts html into tree structure called dom
+
+// why dom?
+// java script  cannot directly access with html
+// it change the dom to main html elements and conten 
+// dom -> document object model
+
+// dom is a tree like structure where each node represents an element in the html document
+// dom allows us to manipulate the html document using java script
+
+// dom provides methods to access and manipulate html elements
+// document.getElementById() -> access element by id
+// document.getElementsByClassName() -> access element by class name
+// document.getElementsByTagName() -> access element by tag name
+// document.querySelector() -> access element by css selector
+// document.querySelectorAll() -> access all element by css selector
+
+
+
+let title = document.getElementById("title");
+console.log(title);
+
+// document -> object or browser and request to access html document
+// getElementById -> method to access element by id
+
+//  webpage me se id = title wale element ko access karke title variable me store kar diya
+
