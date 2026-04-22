@@ -56,9 +56,91 @@
 
 // npm -> node package manager
 
-//& comand for vite instaletion
+//& comand for React instaletion
 // npx creat-react-app@latest (appname)
 
 // npx -> node package runner
 // creat-react-app -> react app generator
 // at last project name 
+
+//& comand for vite instaletion
+// npm creat vite@latest
+// enter project name 
+// select framework -> react
+// select variant -> JavaScript
+
+
+// * Project Structure
+
+// node modules -> all dependencies
+
+// Public -> static files -> used diractly by browser
+
+// src -> sorce code -> where we write code
+
+// app.jsx -> main component or main screen
+// all ui starts here 
+
+// App.css -> styling for app.jsx
+
+// main.jsx -> entry point of application
+//             where we render app.jsx to dom
+
+// index.css -> global styling for entire application and index.html.
+
+// index.html -> main html file where we load our react app.
+
+
+//! -- Day 3 -- ------ Components ------
+
+// react :- collection of components
+// components -> reusable plice of code that represent a part of the user interface
+// components -. UI block
+
+
+//& rfc => shortcut of folder structure
+
+
+// components Benifits -> reusability, maintainability, separation of code, easy to debugging
+
+
+// component name must start with capital letter
+
+// component must return UI
+// Allow other files to use this components 
+// rfc -> resct function component export
+
+
+//* Home work -1
+// creat a
+// navbar, hero section, footer.jsx
+
+// main.jsx -> app.jsx -> comopnets
+
+// jsx => JavaScript xml (html+js)
+
+
+//! -- Day 4 -- ------  ------
+
+// ? Props
+// desighn -> components
+// details -> props
+
+// props -> it is data passed from perent components to child component.
+
+// Props -> information transfer from one components to another component.
+
+// props -> one components 
+//          multiple data
+/* <Student name="Vinay" city="kota"></Student>
+    in student -> 
+    <h1>hyy {prop.name}. How are you</h1>
+    <p>City: {prop.city}</p>
+*/
+
+// app.jsx -> props data -> child component ->
+
+// props behave like object
+
+//* Home Work
+//? Make product card component, title, price, description.
