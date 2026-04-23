@@ -144,3 +144,15 @@
 
 //* Home Work
 //? Make product card component, title, price, description.
+
+
+
+
+//! -- Day 5 -- ------ Pussing image using props ------
+
+// main -> parent (app.jsx) -> child (Student.jsx and details)
+// Parant send image
+// child diaplay image
+// Jo bhi dik raha hai as a props bhejta hai
+
+
