@@ -155,4 +155,36 @@
 // child diaplay image
 // Jo bhi dik raha hai as a props bhejta hai
 
+// child component use to display data
+// Props -> data transfer from parent to child 
+// in parant component called child component and pass value
 
+
+
+// Static -> Only show data
+// dynamic -> show data + change data
+
+
+//! -- Day 6 -- ------ States in React ------
+
+// Normal variable -> static
+// State variable -> dynamic
+
+// State =. data that changes and also update ui automatically
+
+// Hooks => Spacial function that gives extra power to component
+
+// useState => A hook that allows us to add state to function components
+
+// Syntax
+// const [stateVariable, setStateVariable] = useState(initialValue)
+
+// stateVariable -> Current value of state
+// setStateVariable -> Function to update state
+// initialValue -> initial value of state
+
+// & Eorking flow
+// userClick -> event trigger -> setState -> Comonent re-rander -> ui refresh
+
+// decrcribe button -> decrease count by 1
+// multipale time do this work
