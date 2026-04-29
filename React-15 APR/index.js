@@ -188,3 +188,19 @@
 
 // decrcribe button -> decrease count by 1
 // multipale time do this work
+
+
+
+
+//! -- Day 6 -- ------ Evant Handling ------
+
+//* onClick :- Envant handler
+//* onChange ->
+//* onSubmit -> 
+//* onMouseEnter ->
+
+// State -> Never Modify state diractly
+//  always use setState function to update
+//  state trigger re-rendar of component
+//  one state -> one resposibility
+//  state belong to component where it is defined.
