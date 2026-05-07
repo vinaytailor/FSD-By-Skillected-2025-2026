@@ -204,3 +204,23 @@
 //  state trigger re-rendar of component
 //  one state -> one resposibility
 //  state belong to component where it is defined.
+
+
+
+//! -- Day 7 -- ------ Component Life Cycle ------
+
+//* Human -> birth -> growth -> death
+
+//* component -> mount -> update -> unmount
+
+// mounting -> component appears on screen first time
+// first rendar -> mount
+
+// update -> component update due to state change or props change
+// click counter values change button -> update 
+
+// unmounting -> component remove from screen 
+// component removed from screen -> unmount
+
+//! -- Day 8 -- ------ Use effact ------
+
